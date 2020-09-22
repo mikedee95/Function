@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name = prompt("Enter the name of a star");
+    let stellar =
+        [{
+            identity: "Polaris",
+            stellar: "Ursa Ominos"
+        }, {
+            identity: "Aldeberan",
+            stellar: "Taurus"
+        }, {
+            identity: "Deneb",
+            stellar: "Cygnus"
+        }, {
+            identity: "Altair",
+            stellar: "Aquila"
+        }, {
+            identity: "Dubhe",
+            stellar: "Ursamajor"
+        }, {
+            identity: "Regulus",
+            stellar: "Leo"
+        },
+        ];
+    for (let i = 0; i < name.length; i++) {
+       if (stellar[i].stellar === name){
+           name = stellar[i].identity;
+           alert (name);
+       }
+    }
+</script>
+</body>
+</html>
