@@ -6,10 +6,14 @@
 </head>
 <body>
 <script>
-    function factorial(n){
-
-
+   function factorial(num) {
+        let fact = 1;
+        for (let i = 2; i <= num; i++ ) {
+            fact = fact * i;
+        }
+        alert(fact);
     }
+    factorial(15)
 </script>
 </body>
 </html>
